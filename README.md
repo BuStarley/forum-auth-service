@@ -27,6 +27,28 @@
 | Сборщик            | Maven                        |
 | CI/CD              | GitLab CI (local runner)     |
 
+## База данных
+
+### Таблица users
+| Поле             | Тип           | Описание                       |
+|------------------|---------------|--------------------------------|
+| `id`             | UUID          | Первичный ключ                 |
+| `email`          | VARCHAR(255)  | email пользователя             |
+| `password_hash`  | VARCHAR(255)  | Хеш пароля                     |
+| `role`           | VARCHAR(50)   | Роль (USER, MODERATOR, ADMIN)  |
+| `enabled`        | BOOLEAN       | Активен ли аккаунт             |
+| `created_at`     | TIMESTAMP     | Дата регистрации               |
+| `updated_at`     | TIMESTAMP     | Дата обновления                |
+
+### Таблица refresh_tokens
+| Поле         | Тип          | Описание                 |
+|--------------|--------------|--------------------------|
+| `id`         | UUID         | Первичный ключ           |
+| `user_id`    | UUID         | Внешний ключ к users(id) |
+| `token`      | VARCHAR(512) | Refresh токен            |
+| `expires_at` | TIMESTAMP    | Когда истекает           |
+| `created_at` | TIMESTAMP    | Дата создания            |
+
 ## Запуск проекта локально
 
 ### 1. Клонирование
