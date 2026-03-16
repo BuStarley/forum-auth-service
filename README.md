@@ -15,17 +15,18 @@
 
 ## Стек технологий
 
-| Компонент          | Технология                   |
-|--------------------|------------------------------|
-| Язык               | Java 25                      |
-| Фреймворк          | Spring Boot 4.0.3            |
-| Безопасность       | Spring Security, JJWT 0.13.0 |
-| База данных        | PostgreSQL                   |
-| ORM                | Spring Data JPA Hibernate    |
-| Миграции БД        | Flyway                       |
-| Маппинг DTO        | MapStruct                    |
-| Сборщик            | Maven                        |
-| CI/CD              | GitLab CI (local runner)     |
+| Компонент    | Технология                   |
+|--------------|------------------------------|
+| Язык         | Java 25                      |
+| Фреймворк    | Spring Boot 4.0.3            |
+| Безопасность | Spring Security, JJWT 0.13.0 |
+| База данных  | PostgreSQL                   |
+| JDBC драйвер | PostgreSQL JDBC Driver       |
+| ORM          | Spring Data JPA Hibernate    |
+| Миграции БД  | Flyway                       |
+| Маппинг DTO  | MapStruct                    |
+| Сборщик      | Maven                        |
+| CI/CD        | GitLab CI (local runner)     |
 
 ## База данных
 
