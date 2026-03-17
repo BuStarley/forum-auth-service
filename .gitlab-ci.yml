@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - ./mvnw clean test
+    - mvn clean test
