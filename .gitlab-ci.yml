@@ -1,8 +1,7 @@
 stages:
   - test
 
-test-job:
+test:
   stage: test
   script:
-    - echo "Hello from my local runner!"
-    - echo "CI is working!"
+    - ./mvnw clean test
