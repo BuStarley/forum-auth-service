@@ -72,4 +72,6 @@ class JwtTokenProvider(
             }
             false
         }
+
+    fun getAccessTokenExpiration(): Long = jwtConfig.accessTokenExpiration
 }
