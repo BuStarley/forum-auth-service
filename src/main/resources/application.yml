@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: forum-auth-service
+
+  datasource:
+    url: JDBC:postgresql://localhost:5432/authdb
+    username: auth_user
+    password: 13101
+    driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8080
+
+jwt:
+  secret: mySuperSecretKeyForJWTTokens2026
+  access-token-expiration: 3600000 # 1 час в миллисекундах
+  refresh-token-expiration: 86400000 # 24 часа в миллисекундах
