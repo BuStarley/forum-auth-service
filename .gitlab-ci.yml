@@ -6,5 +6,3 @@ test-job:
   script:
     - echo "Hello from my local runner!"
     - echo "CI is working!"
-  tags:
-    - shell
